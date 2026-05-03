@@ -1,0 +1,31 @@
+/* ──────────────────────────────────────────
+   Design Tokens
+   Mirrors Figma variables from the style guide.
+   ────────────────────────────────────────── */
+
+:root {
+  /* Colors */
+  --color-slate-900: #1f314f;
+  --color-slate-500: #68778d;
+  --color-slate-300: #d5e1ef;
+  --color-white: #ffffff;
+
+  /* Spacing */
+  --space-200: 16px;
+  --space-300: 24px;
+  --space-500: 40px;
+
+  /* Typography */
+  --font-family-base: "Outfit", sans-serif;
+
+  --font-size-preset-1: 22px; /* Headline */
+  --font-size-preset-2: 15px; /* Body */
+
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  --line-height-preset-1: 1.2;
+  --line-height-preset-2: 1.4;
+
+  --letter-spacing-preset-2: 0.2px;
+}

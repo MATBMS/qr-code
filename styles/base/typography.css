@@ -1,0 +1,49 @@
+/* ──────────────────────────────────────────
+   Typography
+   Loads the Outfit font from local files and
+   exposes the two text presets from the style guide.
+   ────────────────────────────────────────── */
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../../fonts/Outfit-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../../fonts/Outfit-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Page-wide default = Text Preset 2 (body) */
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-preset-2);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-preset-2);
+  letter-spacing: var(--letter-spacing-preset-2);
+  color: var(--color-slate-900);
+}
+
+/* Text Preset 1 — Outfit Bold, 22px, 120% line-height, 0 letter-spacing */
+.text-preset-1 {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-preset-1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-preset-1);
+  letter-spacing: 0;
+}
+
+/* Text Preset 2 — Outfit Regular, 15px, 140% line-height, 0.2px letter-spacing */
+.text-preset-2 {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-preset-2);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-preset-2);
+  letter-spacing: var(--letter-spacing-preset-2);
+}
