@@ -30,13 +30,20 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 ### Extra feature
 
 As a User,<br>
-I need to be able to [...],<br>
-So that I can [...].
+I need to be able to zoom in on the QR code by hovering it,<br>
+So that I can read it more clearly before scanning it with my phone.
 
 ### What I learned
+
+#### Built my first project with Claude
+
+This was my first end-to-end project paired with Claude Code. I learned how to drive a coding agent: restating goals clearly, reviewing diffs before accepting them, and asking *why* a particular HTML or CSS choice was made instead of just taking the answer. The agent moved fast, but the learning came from slowing down at each step.
+
+#### Integrated the Figma MCP
+
+Connecting the Figma MCP server let Claude pull design tokens (colors, spacing, typography) straight from the style guide into `variables.css`, instead of me hand-copying values. It made the bridge between design and code feel real: the same names exist on both sides.

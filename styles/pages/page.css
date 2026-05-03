@@ -38,8 +38,12 @@
   transition: transform 300ms ease;
 }
 
-.card__image-frame:hover .card__image {
-  transform: scale(1.25);
+/* Only apply the hover-zoom on devices with a real pointer (mouse/trackpad).
+   On touch devices a tap can stick the :hover state and leave the QR zoomed in. */
+@media (hover: hover) {
+  .card__image-frame:hover .card__image {
+    transform: scale(1.25);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
