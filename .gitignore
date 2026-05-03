@@ -67,3 +67,4 @@ design/
 # Claude Code — project instructions and local settings, not for public repos
 CLAUDE.md
 .claude/
+.mcp.json
