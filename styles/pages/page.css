@@ -25,10 +25,27 @@
   gap: var(--space-300); /* 24px between QR and text block */
 }
 
+/* Wrapper clips the image at the rounded corner so the
+   hover-zoom doesn't spill outside the card. */
+.card__image-frame {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
 .card__image {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  transition: transform 300ms ease;
+}
+
+.card__image-frame:hover .card__image {
+  transform: scale(1.25);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card__image {
+    transition: none;
+  }
 }
 
 .card__text {
